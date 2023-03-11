@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './Components/NavBar';
 import AboutMe from './Components/AboutMe';
 import VideoSection from './Components/VideoSection';
