@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
-import Image from 'react-bootstrap/Image'
-import VideoPlaceholder from '../Images/video-placeholder.png'
+import Image from 'react-bootstrap/Image';
+import VideoPlaceholder from '../Images/video-placeholder.png';
 
 const VideoSection = () => {
     const [index, setIndex] = useState(0);
