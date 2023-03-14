@@ -36,12 +36,12 @@ const VideoSection = () => {
     return (
         <div className='video-section' id='video-section'>
             <h1>Video Section</h1>
-            <Carousel activeIndex={index} onSelect={handleSelect} variant='dark' interval={null} className=''>
+            <Carousel activeIndex={index} onSelect={handleSelect} variant='dark' controls='true' interval={null} wrap='true' className='p-5'>
                 <Carousel.Item className=''>
                     <Stack
                         direction={videoDirection}
                         className="d-flex justify-content-around"
-                        gap={3}>
+                        >
                         <Card className=''>
                             <Image
                                 src={VideoPlaceholder}
@@ -64,15 +64,12 @@ const VideoSection = () => {
                             <h5>Video 3/1</h5>
                         </Card>
                     </Stack>
-                    {/* <Carousel.Caption>
-                        <h3>First Set of Slides</h3>
-                    </Carousel.Caption> */}
                 </Carousel.Item>
                 <Carousel.Item>
                     <Stack
                         direction={videoDirection}
                         className="d-flex justify-content-around"
-                        gap={3}>
+                        >
                         <Card>
                             <Image
                                 src={VideoPlaceholder}
@@ -95,15 +92,12 @@ const VideoSection = () => {
                             <h5>Video 3/2</h5>
                         </Card>
                     </Stack>
-                    {/* <Carousel.Caption>
-                        <h3>First Set of Slides</h3>
-                    </Carousel.Caption> */}
                 </Carousel.Item>
                 <Carousel.Item>
                     <Stack
                         direction={videoDirection}
                         className="d-flex justify-content-around"
-                        gap={3}>
+                        >
                         <Card>
                             <Image
                                 src={VideoPlaceholder}
@@ -126,9 +120,7 @@ const VideoSection = () => {
                             <h5>Video 3/3</h5>
                         </Card>
                     </Stack>
-                    {/* <Carousel.Caption>
-                        <h3>First Set of Slides</h3>
-                    </Carousel.Caption> */}
+            
                 </Carousel.Item>
             </Carousel>
         </div>
