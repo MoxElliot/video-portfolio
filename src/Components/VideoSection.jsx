@@ -1,29 +1,49 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
 import Image from 'react-bootstrap/Image';
 import VideoPlaceholder from '../Images/video-placeholder.png';
 
+
 const VideoSection = () => {
     const [index, setIndex] = useState(0);
+    const [ innerWidth, setInnerWidth ] = useState(window.innerWidth)
+    const [ videoDirection, setVideoDirection ] = useState('vertical')
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
     };
+  
+    useEffect(() => {
+        function checkResize() {
+            setInnerWidth(window.innerWidth);
+        }
+        window.addEventListener('resize', checkResize)
+        checkResize();
+        switch(innerWidth > 600) {
+            case false:
+                setVideoDirection('vertical');
+                break;
+            
+            case true:
+                setVideoDirection('horizontal');
+                break;
+        }
+        return () => window.removeEventListener('resize', checkResize);
+    }, [innerWidth]);
 
     return (
         <div className='video-section' id='video-section'>
             <h1>Video Section</h1>
-            <Carousel activeIndex={index} onSelect={handleSelect} variant='dark' className='p-5'>
-                <Carousel.Item>
+            <Carousel activeIndex={index} onSelect={handleSelect} variant='dark' interval={null} className=''>
+                <Carousel.Item className=''>
                     <Stack
-                        direction="horizontal"
-                        className="h-100 d-flex justify-content-around"
+                        direction={videoDirection}
+                        className="d-flex justify-content-around"
                         gap={3}>
                         <Card className=''>
                             <Image
-                                className='d-block w-100'
                                 src={VideoPlaceholder}
                                 alt='First Video First Set'
                             />
@@ -31,7 +51,6 @@ const VideoSection = () => {
                         </Card>
                         <Card className=''>
                             <img
-                                className='d-block w-100'
                                 src={VideoPlaceholder}
                                 alt='Second Video First Set'
                             />
@@ -39,7 +58,6 @@ const VideoSection = () => {
                         </Card>
                         <Card className=''>
                             <img
-                                className='d-block w-100'
                                 src={VideoPlaceholder}
                                 alt='Third Video First Set'
                             />
@@ -52,20 +70,18 @@ const VideoSection = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <Stack
-                        direction="horizontal"
-                        className="h-100 d-flex justify-content-around"
+                        direction={videoDirection}
+                        className="d-flex justify-content-around"
                         gap={3}>
                         <Card>
                             <Image
-                                className='d-block w-100'
                                 src={VideoPlaceholder}
                                 alt='First Video First Set'
                             />
                             <h5>Video 1/2</h5>
                         </Card>
                         <Card>
-                            <img
-                                className='d-block w-100'
+                            <Image
                                 src={VideoPlaceholder}
                                 alt='Second Video First Set'
                             />
@@ -73,7 +89,6 @@ const VideoSection = () => {
                         </Card>
                         <Card>
                             <img
-                                className='d-block w-100'
                                 src={VideoPlaceholder}
                                 alt='Third Video First Set'
                             />
@@ -86,12 +101,11 @@ const VideoSection = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <Stack
-                        direction="horizontal"
-                        className="h-100 d-flex justify-content-around"
+                        direction={videoDirection}
+                        className="d-flex justify-content-around"
                         gap={3}>
                         <Card>
                             <Image
-                                className='d-block w-100'
                                 src={VideoPlaceholder}
                                 alt='First Video First Set'
                             />
@@ -99,7 +113,6 @@ const VideoSection = () => {
                         </Card>
                         <Card>
                             <img
-                                className='d-block w-100'
                                 src={VideoPlaceholder}
                                 alt='Second Video First Set'
                             />
@@ -107,7 +120,6 @@ const VideoSection = () => {
                         </Card>
                         <Card>
                             <img
-                                className='d-block w-100'
                                 src={VideoPlaceholder}
                                 alt='Third Video First Set'
                             />
