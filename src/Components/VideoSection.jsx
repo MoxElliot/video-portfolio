@@ -1,127 +1,44 @@
-import React, { useState, useEffect } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import Card from 'react-bootstrap/Card';
-import Stack from 'react-bootstrap/Stack';
-import Image from 'react-bootstrap/Image';
+import React from 'react';
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 import VideoPlaceholder from '../Images/video-placeholder.png';
 
 
 const VideoSection = () => {
-    const [index, setIndex] = useState(0);
-    const [ innerWidth, setInnerWidth ] = useState(window.innerWidth)
-    const [ videoDirection, setVideoDirection ] = useState('vertical')
+ 
+    const handleDragStart = (e) => e.preventDefault();
 
-    const handleSelect = (selectedIndex, e) => {
-        setIndex(selectedIndex);
+    const responsive = {
+        0: { items: 1 },
+        568: { items: 2 },
+        1024: { items: 3, itemsFit: 'contain' },
     };
-  
-    useEffect(() => {
-        function checkResize() {
-            setInnerWidth(window.innerWidth);
-        }
-        window.addEventListener('resize', checkResize)
-        checkResize();
-        switch(innerWidth > 600) {
-            case false:
-                setVideoDirection('vertical');
-                break;
-            
-            case true:
-                setVideoDirection('horizontal');
-                break;
-        }
-        return () => window.removeEventListener('resize', checkResize);
-    }, [innerWidth]);
+
+    let videoObj= [
+        {src: VideoPlaceholder, title:"Video 1"},
+        {src: VideoPlaceholder, title:"Video 2"},
+        {src: VideoPlaceholder, title:"Video 3"},
+        {src: VideoPlaceholder, title:"Video 4"},
+        {src: VideoPlaceholder, title:"Video 5"},
+        {src: VideoPlaceholder, title:"Video 6"},
+        {src: VideoPlaceholder, title:"Video 7"},
+        {src: VideoPlaceholder, title:"Video 8"},
+    ]
+
+    let videos = videoObj.map((video) => {
+        return (
+                <div className='d-flex flex-row justify-content-center'>
+                    <img src={video.src} title={video.title} allowfullscreen autoPlayControls='true'/>
+                </div>
+                )
+    });
 
     return (
         <div className='video-section' id='video-section'>
             <h1>Video Section</h1>
-            <Carousel activeIndex={index} onSelect={handleSelect} variant='dark' controls='true' interval={null} wrap='true' className='p-5'>
-                <Carousel.Item className=''>
-                    <Stack
-                        direction={videoDirection}
-                        className="d-flex justify-content-start"
-                        >
-                      
-                            <Image
-                                src={VideoPlaceholder}
-                                alt='First Video First Set'
-                                
-                            />
-                            <h5>Video 1/1</h5>
-                      
-                            <Image
-                                src={VideoPlaceholder}
-                                alt='Second Video First Set'
-                            />
-                            <h5>Video 2/1</h5>
-                        
-                            <Image
-                                src={VideoPlaceholder}
-                                alt='Third Video First Set'
-                            />
-                            <h5>Video 3/1</h5>
-                        
-                    </Stack>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <Stack
-                        direction={videoDirection}
-                        className="d-flex justify-content-around"
-                        >
-                        <Card>
-                            <Image
-                                src={VideoPlaceholder}
-                                alt='First Video First Set'
-                            />
-                            <h5>Video 1/2</h5>
-                        </Card>
-                        <Card>
-                            <Image
-                                src={VideoPlaceholder}
-                                alt='Second Video First Set'
-                            />
-                            <h5>Video 2/2</h5>
-                        </Card>
-                        <Card>
-                            <img
-                                src={VideoPlaceholder}
-                                alt='Third Video First Set'
-                            />
-                            <h5>Video 3/2</h5>
-                        </Card>
-                    </Stack>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <Stack
-                        direction={videoDirection}
-                        className="d-flex justify-content-around"
-                        >
-                        <Card>
-                            <Image
-                                src={VideoPlaceholder}
-                                alt='First Video First Set'
-                            />
-                            <h5>Video 1/3</h5>
-                        </Card>
-                        <Card>
-                            <img
-                                src={VideoPlaceholder}
-                                alt='Second Video First Set'
-                            />
-                            <h5>Video 2/3</h5>
-                        </Card>
-                        <Card>
-                            <img
-                                src={VideoPlaceholder}
-                                alt='Third Video First Set'
-                            />
-                            <h5>Video 3/3</h5>
-                        </Card>
-                    </Stack>
-            
-                </Carousel.Item>
-            </Carousel>
+            <div  className='m-5 container'>
+                <AliceCarousel mouseTracking items={videos} responsive={responsive}  onDragStart={handleDragStart}/>
+            </div>
         </div>
     )
 }
