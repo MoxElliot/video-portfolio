@@ -40,29 +40,28 @@ const VideoSection = () => {
                 <Carousel.Item className=''>
                     <Stack
                         direction={videoDirection}
-                        className="d-flex justify-content-around"
+                        className="d-flex justify-content-start"
                         >
-                        <Card className=''>
+                      
                             <Image
                                 src={VideoPlaceholder}
                                 alt='First Video First Set'
+                                
                             />
                             <h5>Video 1/1</h5>
-                        </Card>
-                        <Card className=''>
-                            <img
+                      
+                            <Image
                                 src={VideoPlaceholder}
                                 alt='Second Video First Set'
                             />
                             <h5>Video 2/1</h5>
-                        </Card>
-                        <Card className=''>
-                            <img
+                        
+                            <Image
                                 src={VideoPlaceholder}
                                 alt='Third Video First Set'
                             />
                             <h5>Video 3/1</h5>
-                        </Card>
+                        
                     </Stack>
                 </Carousel.Item>
                 <Carousel.Item>
