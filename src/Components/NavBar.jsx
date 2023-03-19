@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Basketball from '../Assets/Basketball.png'
 
 
 const NavBar = () => {
@@ -11,7 +12,14 @@ const NavBar = () => {
         {['sm'].map((expand) => (
             <Navbar key={expand} expand={expand} className='mb-3 '>
                 <Container fluid>
-                    <Navbar.Brand>
+                    <Navbar.Brand className=''>
+                        <img
+                            src={Basketball}
+                            width="30"
+                            height="30"
+                            className="d-inline-block mx-1 align-top "
+                            alt="Navbar Logo"
+                        />
                         Jacob Doffing
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand} `}>
