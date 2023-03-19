@@ -5,12 +5,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Basketball from '../Assets/Basketball.png'
 
-
+//https://react-bootstrap.github.io/components/navbar/#navbars-mobile-friendly
+// check here for hamburger
 const NavBar = () => {
     return (
         <>
-        {['sm'].map((expand) => (
-            <Navbar key={expand} expand={expand} className='mb-3 '>
+            <Navbar key='sm' expand='sm' className='mb-3 '>
                 <Container fluid>
                     <Navbar.Brand className=''>
                         <img
@@ -21,15 +21,14 @@ const NavBar = () => {
                             alt="Navbar Logo"
                         />
                         Jacob Doffing
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand} `}>
-                    <NavDropdown className="justify-content-end flex-grow-1 pe-3 ">
+                    </Navbar.Brand>                    
+                    <NavDropdown className="pe-3 d-sm-none " align='end'>
                         <Nav.Link href="#action1">About Me</Nav.Link>
                         <Nav.Link href="#action2">Videos</Nav.Link>
                         <Nav.Link href="#action2">Stats</Nav.Link>
                         <Nav.Link href="#action2">Contact</Nav.Link>
                     </NavDropdown>
-                    </Navbar.Toggle>
+                  
                     <Nav className="justify-content-end flex-grow-1 pe-3 d-none d-sm-flex">
                         <Nav.Link href="#action1">About Me</Nav.Link>
                         <Nav.Link href="#action2">Videos</Nav.Link>
@@ -38,7 +37,7 @@ const NavBar = () => {
                     </Nav>
                 </Container>
             </Navbar>
-        ))}
+
         </>
     )
 }
