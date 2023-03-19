@@ -1,17 +1,6 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-// import Movie1 from '../../Media/JPicVid/0a277fc437d547269e264e1cb095b994.MOV';
-// import Movie2 from '../Media/JPicVid/0a277fc437d547269e264e1cb095b994.MOV';
-// import Movie3 from '../Media/JPicVid/0a277fc437d547269e264e1cb095b994.MOV';
-// import Movie4 from '../Media/JPicVid/0a277fc437d547269e264e1cb095b994.MOV';
-// import Movie5 from '../Media/JPicVid/0a277fc437d547269e264e1cb095b994.MOV';
-// import Movie6 from '../Media/JPicVid/0a277fc437d547269e264e1cb095b994.MOV';
-// import Movie7 from '../Media/JPicVid/0a277fc437d547269e264e1cb095b994.MOV';
-// import Movie8 from '../Media/JPicVid/0a277fc437d547269e264e1cb095b994.MOV';
-// import Movie9 from '../Media/JPicVid/0a277fc437d547269e264e1cb095b994.MOV';
-// import JDrive from '../Media/JPicVid/BWJumper.jpg';
-import VideoPlaceholder from '../Media/video-placeholder.png';
 
 
 const VideoSection = () => {
@@ -52,7 +41,7 @@ const VideoSection = () => {
     return (
         <div className='video-section' id='video-section'>
             <h1>Video Section</h1>
-            <div  className='m-5 container'>
+            <div  className='container'>
                 <AliceCarousel mouseTracking items={videos} responsive={responsive}  onDragStart={handleDragStart}/>
             </div>
         </div>
