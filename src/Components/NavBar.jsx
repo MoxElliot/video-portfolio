@@ -10,7 +10,7 @@ import Basketball from '../Assets/Basketball.png'
 const NavBar = () => {
     return (
         <>
-            <Navbar key='sm' expand='sm' className='mb-3 '>
+            <Navbar key='sm' expand='sm' className='navbar mb-3' sticky='top'>
                 <Container fluid>
                     <Navbar.Brand className=''>
                         <img
@@ -23,17 +23,17 @@ const NavBar = () => {
                         Jacob Doffing
                     </Navbar.Brand>                    
                     <NavDropdown className="pe-3 d-sm-none " align='end'>
-                        <Nav.Link href="#action1">About Me</Nav.Link>
-                        <Nav.Link href="#action2">Videos</Nav.Link>
-                        <Nav.Link href="#action2">Stats</Nav.Link>
-                        <Nav.Link href="#action2">Contact</Nav.Link>
+                        <Nav.Link href="#about-me">About Me</Nav.Link>
+                        <Nav.Link href="#video-section">Videos</Nav.Link>
+                        <Nav.Link href="#statistics">Stats</Nav.Link>
+                        <Nav.Link href="#contact-me">Contact</Nav.Link>
                     </NavDropdown>
                   
                     <Nav className="justify-content-end flex-grow-1 pe-3 d-none d-sm-flex">
-                        <Nav.Link href="#action1">About Me</Nav.Link>
-                        <Nav.Link href="#action2">Videos</Nav.Link>
-                        <Nav.Link href="#action2">Stats</Nav.Link>
-                        <Nav.Link href="#action2">Contact</Nav.Link>
+                        <Nav.Link href="#about-me">About Me</Nav.Link>
+                        <Nav.Link href="#video-section">Videos</Nav.Link>
+                        <Nav.Link href="#statistics">Stats</Nav.Link>
+                        <Nav.Link href="#contact-me">Contact</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
