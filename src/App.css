@@ -9,6 +9,7 @@
 .about-photo {
     height: 50vh;
     background-image: url("./Assets/main.png");
+    background-size: cover;
 }
 
 .about-header {
