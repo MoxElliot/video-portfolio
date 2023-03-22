@@ -34,12 +34,34 @@
 
 .about-stats {
     height: 20vh;
-    background-color: #D9D9D9;
-    background-blend-mode: lighten;
-    opacity: 0.2;
+    background: rgba(217,217,217,0.2);
 }
 
 .about-summary {
     color: white;
     padding: 1.5rem;
+}
+
+.header-stats {
+    opacity: 1;
+    color: white;
+}
+
+.single-stat {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.statnum {
+    font-size: 3rem;
+
+}
+
+.stattype {
+    color: #DC6F0B;
+
+ 
 }

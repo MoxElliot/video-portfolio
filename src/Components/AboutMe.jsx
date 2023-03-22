@@ -1,4 +1,5 @@
 import React from 'react';
+import HeaderStat from './HeaderStat';
 
 const AboutMe = () => {
     return (
@@ -8,10 +9,10 @@ const AboutMe = () => {
                 <h1>Jacob Doffing</h1>
             </div>
             <div className='about-stats'>
-                <div>
-                    
+                <div className='header-stats'>
+                    <HeaderStat statNum="19.7" statType="points" />
                 </div>
-                <div>
+                <div className='header-stats'>
 
                 </div>
             </div>
