@@ -1,5 +1,6 @@
 .App {
     background-color: grey;
+    font-family: 'Inter', sans-serif;
 }
 
 .navbar {
@@ -45,6 +46,7 @@
 .header-stats {
     opacity: 1;
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .single-stat {
@@ -56,12 +58,11 @@
 }
 
 .statnum {
-    font-size: 3rem;
 
+    font-size: 3rem;
 }
 
 .stattype {
-    color: #DC6F0B;
 
- 
+    color: #DC6F0B;
 }
