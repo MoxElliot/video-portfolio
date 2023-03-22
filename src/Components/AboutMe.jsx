@@ -5,9 +5,16 @@ const AboutMe = () => {
         <div className='about-me' id='about-me'>
             <div className='about-photo'></div>
             <div className='about-header'>
-                <h1>Elliot's Nephew</h1>
+                <h1>Jacob Doffing</h1>
             </div>
-            <div className='about-stats'></div>
+            <div className='about-stats'>
+                <div>
+                    
+                </div>
+                <div>
+
+                </div>
+            </div>
             <div className='about-summary'>
                 <p>Nowhere in the world will you have seen talent like Elliot’s Nephew. That’s why he has a better website than any other player.</p>
                 

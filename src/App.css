@@ -8,29 +8,35 @@
 }
 
 .about-me {
-    background-color: black;
+    background: linear-gradient(#484848, #000000);
+    background: url("./Assets/gun_metal.webp");
 }
 
 .about-photo {
     height: 50vh;
-    background-image: url("./Assets/main.png");
+    background-image: url("../public/JPicVid/BWDrive.jpg");
     background-size: cover;
 }
 
 .about-header {
+    margin: 0;
+    padding: 0;
     height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
 }
 
 .about-header h1 {
-    text-align: center;
-    vertical-align: middle;
     font-size: 3rem;
 }
 
 .about-stats {
     height: 20vh;
     background-color: #D9D9D9;
+    background-blend-mode: lighten;
+    opacity: 0.2;
 }
 
 .about-summary {
