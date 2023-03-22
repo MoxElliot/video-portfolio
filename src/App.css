@@ -1,5 +1,10 @@
+.App {
+    background-color: grey;
+}
+
 .navbar {
     height: 10vh;
+    background-color: grey;
 }
 
 .about-me {

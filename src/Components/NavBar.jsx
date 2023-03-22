@@ -1,57 +1,44 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Basketball from '../Assets/Basketball.png'
 
+//https://react-bootstrap.github.io/components/navbar/#navbars-mobile-friendly
+// check here for hamburger
 const NavBar = () => {
     return (
-        <div className='navbar' id='navbar'>
-            <h1>NavBar</h1>
-            <ul>
-                <li>
-                    <Link
-                        activeClass="active" 
-                        to="about-me" 
-                        spy={true} 
-                        smooth={true} 
-                        duration={500}
-                    >
-                        About Me
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        activeClass="active" 
-                        to="video-section" 
-                        spy={true} 
-                        smooth={true} 
-                        duration={500}
-                    >
-                        Videos
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        activeClass="active" 
-                        to="statistics" 
-                        spy={true} 
-                        smooth={true} 
-                        duration={500}
-                    >
-                        Statistics
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        activeClass="active" 
-                        to="contact-me" 
-                        spy={true} 
-                        smooth={true} 
-                        duration={500}
-                    >
-                        Contact Me
-                    </Link>
-                </li>
-            </ul>
-        </div>
+        <>
+            <Navbar key='sm' expand='sm' className='navbar mb-3' sticky='top'>
+                <Container fluid>
+                    <Navbar.Brand className=''>
+                        <img
+                            src={Basketball}
+                            width="30"
+                            height="30"
+                            className="d-inline-block mx-1 align-top "
+                            alt="Navbar Logo"
+                        />
+                        Jacob Doffing
+                    </Navbar.Brand>                    
+                    <NavDropdown className="pe-3 d-sm-none " align='end'>
+                        <Nav.Link href="#about-me">About Me</Nav.Link>
+                        <Nav.Link href="#video-section">Videos</Nav.Link>
+                        <Nav.Link href="#statistics">Stats</Nav.Link>
+                        <Nav.Link href="#contact-me">Contact</Nav.Link>
+                    </NavDropdown>
+                  
+                    <Nav className="justify-content-end flex-grow-1 pe-3 d-none d-sm-flex">
+                        <Nav.Link href="#about-me">About Me</Nav.Link>
+                        <Nav.Link href="#video-section">Videos</Nav.Link>
+                        <Nav.Link href="#statistics">Stats</Nav.Link>
+                        <Nav.Link href="#contact-me">Contact</Nav.Link>
+                    </Nav>
+                </Container>
+            </Navbar>
+
+        </>
     )
 }
 
