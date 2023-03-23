@@ -10,13 +10,13 @@ const ContactMe = () => {
                 <a href='mailto:test@gmail.com' className='w-25 h-25'>
                     <AiOutlineMail className='w-75 h-100'/>
                 </a>
-                <a href='#' className='w-25 h-25'>
+                <a href='#contact-me' className='w-25 h-25'>
                     <AiOutlineInstagram className='w-75 h-75'/>
                 </a>
-                <a href='#' className='w-25 h-25'>
+                <a href='#contact-me' className='w-25 h-25'>
                     <AiFillTwitterCircle className='w-75 h-75'/>
                 </a>
-                <a href='#' className='w-25 h-25'>
+                <a href='#contact-me' className='w-25 h-25'>
                     <FaTiktok className='w-75 h-75'/>
                 </a>
             </ButtonGroup>
