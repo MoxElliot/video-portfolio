@@ -5,7 +5,7 @@
 
 .navbar {
     height: 10vh;
-    background-color: grey;
+    background-color: white;
 }
 
 .about-me {
@@ -34,9 +34,8 @@
 }
 
 .about-stats {
-    height: 20vh;
     background: rgba(217,217,217,0.2);
-    padding: 0 2rem;
+    padding: 0.5rem 2rem;
 }
 
 .about-summary {
@@ -45,36 +44,31 @@
 }
 
 .about-stats-row {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-    justify-content: space-between;
     opacity: 1;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
-    background-color: aquamarine;
+
 }
 
 .single-stat {
+    padding: 0.75rem;
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
     font-weight: bold;
 }
 
 .statnum {
-    font-size: 2.7rem;
+    font-size:xx-large;
+    font-weight: bold;
     margin: 0;
     padding: 0;
-    line-height: 3rem;
-    background-color: blue;
+    line-height: 1.75rem;
 }
 
 .stattype {
     margin: 0;
     padding: 0;
     color: #DC6F0B;
-    background-color: red;
 }
 
 .contact-me {

@@ -3,7 +3,7 @@ import React from 'react';
 const HeaderStat = (props) => {
     return (
         <div className='single-stat'>
-            <p className="statnum">{props.statNum}</p>
+            <h2 className="statnum">{props.statNum}</h2>
             <p className="stattype">{props.statType}</p>
         </div>
     )
