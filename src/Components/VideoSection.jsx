@@ -14,18 +14,18 @@ const VideoSection = () => {
     };
 
     let videoObj= [
-        {src: 'JPicVid/vid1.MP4', title:'Video 1', type:'video/mp4'},
-        {src: 'JPicVid/vid2.MP4', title:'Video 2', type:'video/mp4'},
-        {src: 'JPicVid/vid3.MP4', title:'Video 3', type:'video/mp4'},
-        {src: 'JPicVid/vid4.MP4', title:'Video 4', type:'video/mp4'},
-        {src: 'JPicVid/vid5.MP4', title:'Video 5', type:'video/mp4'},
-        {src: 'JPicVid/vid6.MP4', title:'Video 6', type:'video/mp4'},
-        {src: 'JPicVid/vid7.MP4', title:'Video 7', type:'video/mp4'},
-        {src: 'JPicVid/vid8.MP4', title:'Video 8', type:'video/mp4'},
-        {src: 'JPicVid/vid9.MP4', title:'Video 9', type:'video/mp4'},
-        {src: 'JPicVid/vid10.MP4', title:'Video 10', type:'video/mp4'},
-        {src: 'JPicVid/vid11.MP4', title:'Video 11', type:'video/mp4'},
-        {src: 'JPicVid/vid12.MP4', title:'Video 12', type:'video/mp4'},
+        {src: 'https://d3ee098cruiy0.cloudfront.net/vid1.MP4', title:'Video 1', type:'video/mp4'},
+        {src: 'https://d3ee098cruiy0.cloudfront.net/vid2.MP4', title:'Video 2', type:'video/mp4'},
+        {src: 'https://d3ee098cruiy0.cloudfront.net/vid3.MP4', title:'Video 3', type:'video/mp4'},
+        {src: 'https://d3ee098cruiy0.cloudfront.net/vid4.MP4', title:'Video 4', type:'video/mp4'},
+        {src: 'https://d3ee098cruiy0.cloudfront.net/vid5.MP4', title:'Video 5', type:'video/mp4'},
+        {src: 'https://d3ee098cruiy0.cloudfront.net/vid6.MP4', title:'Video 6', type:'video/mp4'},
+        {src: 'https://d3ee098cruiy0.cloudfront.net/vid7.MP4', title:'Video 7', type:'video/mp4'},
+        {src: 'https://d3ee098cruiy0.cloudfront.net/vid8.MP4', title:'Video 8', type:'video/mp4'},
+        {src: 'https://d3ee098cruiy0.cloudfront.net/vid9.MP4', title:'Video 9', type:'video/mp4'},
+        {src: 'https://d3ee098cruiy0.cloudfront.net/vid10.MP4', title:'Video 10', type:'video/mp4'},
+        {src: 'https://d3ee098cruiy0.cloudfront.net/vid11.MP4', title:'Video 11', type:'video/mp4'},
+        {src: 'https://d3ee098cruiy0.cloudfront.net/vid12.MP4', title:'Video 12', type:'video/mp4'},
     ]
 
     let videos = videoObj.map((video) => {
