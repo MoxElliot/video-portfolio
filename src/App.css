@@ -36,6 +36,7 @@
 .about-stats {
     height: 20vh;
     background: rgba(217,217,217,0.2);
+    padding: 0 2rem;
 }
 
 .about-summary {
@@ -43,26 +44,35 @@
     padding: 1.5rem;
 }
 
-.header-stats {
+.about-stats-row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
     opacity: 1;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
+    background-color: aquamarine;
 }
 
 .single-stat {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
     font-weight: bold;
 }
 
 .statnum {
-
-    font-size: 3rem;
+    font-size: 2.7rem;
+    margin: 0;
+    padding: 0;
+    line-height: 3rem;
+    background-color: blue;
 }
 
 .stattype {
-
+    margin: 0;
+    padding: 0;
     color: #DC6F0B;
+    background-color: red;
 }

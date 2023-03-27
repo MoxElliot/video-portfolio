@@ -9,11 +9,15 @@ const AboutMe = () => {
                 <h1>Jacob Doffing</h1>
             </div>
             <div className='about-stats'>
-                <div className='header-stats'>
+                <div className='about-stats-row'>
                     <HeaderStat statNum="19.7" statType="points" />
+                    <HeaderStat statNum="8.7" statType="rebounds" />
+                    <HeaderStat statNum="4.7" statType="assists" />
                 </div>
-                <div className='header-stats'>
-
+                <div className='about-stats-row'>
+                    <HeaderStat statNum="2.2" statType="blocks" />
+                    <HeaderStat statNum="1.3" statType="steals" />
+                    <HeaderStat statNum="33.7" statType="minutes" />
                 </div>
             </div>
             <div className='about-summary'>
