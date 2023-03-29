@@ -20,9 +20,9 @@ const NavBar = () => {
                             className="d-inline-block mx-1 align-top "
                             alt="Logo"
                         />
-                        Jacob Doffing
+                        <p className="d-inline-block mx-1 align-top">Jacob Doffing</p>
                     </Navbar.Brand>                    
-                    <NavDropdown className="pe-3 d-sm-none " align='end'>
+                    <NavDropdown className="pe-3 d-sm-none" align='end'>
                         <Nav.Link href="#about-me">About Me</Nav.Link>
                         <Nav.Link href="#video-section">Videos</Nav.Link>
                         <Nav.Link href="#statistics">Stats</Nav.Link>

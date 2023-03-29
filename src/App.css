@@ -5,7 +5,17 @@
 
 .navbar {
     height: 10vh;
-    background-color: white;
+    background: url("./Assets/gun_metal.webp");
+    background-color: #000000;
+}
+
+.navbar p {
+    color: #DC6F0B;
+    text-transform: uppercase;
+}
+
+.navbar a {
+    color: black;
 }
 
 .about-me {
@@ -31,6 +41,7 @@
 
 .about-header h1 {
     font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .about-stats {
@@ -47,7 +58,6 @@
     opacity: 1;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
-
 }
 
 .single-stat {
@@ -74,3 +84,29 @@
 .contact-me {
     background-color: grey;
 } 
+
+@media only screen and (min-width: 600px) {
+    .about-photo {
+        width: 45%;
+        position: relative;
+        left: 50%;
+        min-height: 30rem;
+    }
+
+    .navbar a {
+        color: white;
+    }
+
+    .about-stats {
+        position: absolute;
+        top: 40%;
+        right: 45%;
+    }
+
+    .about-header {
+        position: absolute;
+        top: 25%;
+        right: 52%;
+
+    }
+}
