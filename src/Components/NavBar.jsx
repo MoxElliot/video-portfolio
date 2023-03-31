@@ -10,7 +10,7 @@ import Basketball from '../Assets/Basketball.png'
 const NavBar = () => {
     return (
         <>
-            <Navbar key='sm' expand='sm' className='navbar mb-3' sticky='top'>
+            <Navbar key='sm' expand='sm' className='navbar' sticky='top'>
                 <Container fluid>
                     <Navbar.Brand className=''>
                         <img
@@ -18,11 +18,11 @@ const NavBar = () => {
                             width="30"
                             height="30"
                             className="d-inline-block mx-1 align-top "
-                            alt="Navbar Logo"
+                            alt="Logo"
                         />
-                        Jacob Doffing
+                        <p className="d-inline-block mx-1 align-top">Jacob Doffing</p>
                     </Navbar.Brand>                    
-                    <NavDropdown className="pe-3 d-sm-none " align='end'>
+                    <NavDropdown className="pe-3 d-sm-none" align='end'>
                         <Nav.Link href="#about-me">About Me</Nav.Link>
                         <Nav.Link href="#video-section">Videos</Nav.Link>
                         <Nav.Link href="#statistics">Stats</Nav.Link>
