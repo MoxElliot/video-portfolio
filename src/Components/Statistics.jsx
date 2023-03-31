@@ -11,6 +11,7 @@ const statsHeadArr = [['Year','Yr'], ['Games','G'], ['Points','PTS'], ['Total Re
 const Statistics = () => {
     return (
         <div className='statistics container' id='statistics'>
+            <div style={{height:'10rem'}}></div>
             <h1>Statistics</h1>
             <Table striped bordered hover variant='dark' size='sm'>
                 <thead hover='true'> 
