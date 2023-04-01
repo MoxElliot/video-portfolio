@@ -39,11 +39,8 @@ const VideoSection = () => {
     });
 
     return (
-        <div className='video-section container mt-5 p-0' id='video-section'>
-            <div 
-                className='section-divider' 
-                style={{height:'10rem'}}
-            />
+        <div className='video-section container mt-5' id='video-section'>
+            <div style={{height:'10rem'}}></div>
             <h1>Videos</h1>
             <AliceCarousel mouseTracking items={videos} responsive={responsive}  onDragStart={handleDragStart} role='presentation'/>
         </div>
