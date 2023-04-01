@@ -1,5 +1,7 @@
+
 .App {
-    background-color: grey;
+    background: linear-gradient(#484848, #000000);
+    background: url("./Assets/gun_metal.webp");
     font-family: 'Inter', sans-serif;
 }
 
@@ -40,7 +42,7 @@
 }
 
 .about-header h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -81,8 +83,24 @@
     color: #DC6F0B;
 }
 
+.section-divider {
+    background: linear-gradient(#484848, #000000);
+    background: url("./Assets/gun_metal.webp");
+    padding:0;
+    width:100%;
+}
+
+.video-section {
+    color:white;
+    padding:0;
+}
+
+.statistics {
+    color:white;
+}
+
 .contact-me {
-    background-color: grey;
+    color:white
 } 
 
 @media only screen and (min-width: 600px) {
