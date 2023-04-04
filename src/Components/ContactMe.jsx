@@ -5,8 +5,11 @@ import {FaTiktok} from 'react-icons/fa';
 
 const ContactMe = () => {
     return (
-        <div className='contact-me container' id='contact-me'>
-            <div style={{height:'10rem'}}></div>
+        <div className='contact-me container p-0' id='contact-me'>
+            <div 
+                className='section-divider' 
+                style={{height:'10rem'}}
+            />
             <ButtonGroup aria-label="Social Contacts" className='contact-card d-flex flex-row p-2'>
                 <a href='mailto:test@gmail.com' className='w-25 h-25'>
                     <AiOutlineMail className='w-75 h-100' style={{color:'blue'}}/>

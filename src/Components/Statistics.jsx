@@ -10,10 +10,15 @@ const statsHeadArr = [['Year','Yr'], ['Games','G'], ['Points','PTS'], ['Total Re
 
 const Statistics = () => {
     return (
-        <div className='statistics container' id='statistics'>
-            <div style={{height:'10rem'}}></div>
+        <div className='statistics container p-0' id='statistics'>
+            <div 
+                className='section-divider' 
+                style={{height:'10rem'}}
+            />
             <h1>Statistics</h1>
-            <Table striped bordered hover variant='dark' size='sm'>
+            <Table 
+                className='border'
+                striped bordered hover variant='dark' size='sm'>
                 <thead hover='true'> 
                     <tr>
                         {statsHeadArr.map((data, i)=> 
