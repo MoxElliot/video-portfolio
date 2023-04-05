@@ -106,6 +106,15 @@
     color:white
 } 
 
+.alice-carousel__prev-btn-item,
+.alice-carousel__next-btn-item {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  margin: 0;
+  color: white;
+}
+
 @media only screen and (min-width: 600px) {
     .about-photo {
         width: 45%;

@@ -31,7 +31,7 @@ const VideoSection = () => {
     let videos = videoObj.map((video) => {
         return (
                 <div className='d-flex flex-column justify-content-center'>
-                    <video className='m-3' controls width={250} height={250}>
+                    <video className='m-3' controls width={250} height={250} onDragStart={handleDragStart} role='presentation'>
                         <source src={video.src} type={video.type}  />
                     </video>
                 </div>
@@ -42,7 +42,8 @@ const VideoSection = () => {
         <div className='video-section container mt-5' id='video-section'>
             <div style={{height:'10rem'}}></div>
             <h1>Videos</h1>
-            <AliceCarousel mouseTracking items={videos} responsive={responsive}  onDragStart={handleDragStart} role='presentation'/>
+            <AliceCarousel mouseTracking items={videos} responsive={responsive}  />
+          
         </div>
     )
 }
