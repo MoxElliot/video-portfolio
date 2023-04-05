@@ -1,6 +1,7 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs'
 
 // Do this https://maxmarinich.github.io/react-alice-carousel/#custom-components
 const VideoSection = () => {
@@ -42,7 +43,17 @@ const VideoSection = () => {
         <div className='video-section container mt-5' id='video-section'>
             <div style={{height:'10rem'}}></div>
             <h1>Videos</h1>
-            <AliceCarousel mouseTracking items={videos} responsive={responsive}  />
+            <AliceCarousel 
+                mouseTracking 
+                items={videos} 
+                responsive={responsive}
+                renderPrevButton={() => {
+                    return <BsArrowLeftCircle size={50}/>
+                  }}
+                renderNextButton={() => {
+                    return <BsArrowRightCircle size={50}/>
+                  }}
+            />
           
         </div>
     )
