@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Basketball from '../Assets/Basketball.png'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 //https://react-bootstrap.github.io/components/navbar/#navbars-mobile-friendly
 // check here for hamburger
@@ -11,7 +12,7 @@ const NavBar = () => {
     return (
         <>
             <Navbar key='sm' expand='sm' className='navbar' sticky='top'>
-                <Container fluid>
+                <Container fluid className='d-flex align-items-center'>
                     <Navbar.Brand className=''>
                         <img
                             src={Basketball}
@@ -22,7 +23,13 @@ const NavBar = () => {
                         />
                         <p className="d-inline-block mx-1 align-top">Jacob Doffing</p>
                     </Navbar.Brand>                    
-                    <NavDropdown className="pe-3 d-sm-none" align='end'>
+                    <NavDropdown 
+                        title={<GiHamburgerMenu color='white' size={20}/>}
+                        id="basic-nav-dropdown"
+                        className="pe-3 mb-3 d-sm-none" 
+                        align='end'
+                    >
+                        
                         <Nav.Link href="#about-me">About Me</Nav.Link>
                         <Nav.Link href="#video-section">Videos</Nav.Link>
                         <Nav.Link href="#statistics">Stats</Nav.Link>

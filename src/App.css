@@ -16,11 +16,17 @@
     text-transform: uppercase;
 }
 
+#basic-nav-dropdown::after{
+    display: none; 
+ }
+
 .social-link {
     color: #DC6F0B;
 }
 .navbar a {
     color: black;
+    text-align:center
+    
 }
 
 .about-me {
