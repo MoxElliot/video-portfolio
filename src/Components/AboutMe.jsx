@@ -19,11 +19,9 @@ const AboutMe = () => {
                 </div>
             </div>
             <div className='about-summary'>
-                <p>Nowhere in the world will you have seen talent like Elliot’s Nephew. That’s why he has a better website than any other player.</p>
+                <p>Jacob Doffing is a phenom on the basketball court. Through a life of doing the work, making sacrifices, he's become a dominant player.</p>
                 
-                <p>He’ll have an even better introduction written.</p>
-
-                <p>And probably a lot more sentences than this. But really, it’ll be pretty short because who comes here to read paragraphs of text?</p>
+                <p>Check out his video and statistics below and contact Jacob to set up a conversation.</p>
             </div>
         </div>
     )

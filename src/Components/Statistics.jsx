@@ -1,11 +1,9 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
 
-const statsArr = [{year:'2019', games:'99', points:'888', rebounds:'888', assists:'888', two_field_goal_percent: '50%', three_field_goal_percent:'50%', free_throw_percent:'80%', effetive_field_goal_percent:'45%'},
-{year:'2020', games:'99', points:'888', rebounds:'888', assists:'888', two_field_goal_percent: '50%', three_field_goal_percent:'50%', free_throw_percent:'80%', effetive_field_goal_percent:'45%'},
-{year:'2021', games:'99', points:'888', rebounds:'888', assists:'888', two_field_goal_percent: '50%', three_field_goal_percent:'50%', free_throw_percent:'80%', effetive_field_goal_percent:'45%'}]
+const statsArr = [{year:'2022', games:'30', points:'11.2', rebounds:'7.7', two_field_goal_percent: '57.1%', three_field_goal_percent:'30%', free_throw_percent:'82.3%'},]
 
-const statsHeadArr = [['Year','Yr'], ['Games','G'], ['Points','PTS'], ['Total Rebounds','TRB'], ['Assists', 'AST'], ['Field Goal %', 'FG%'], ['3-Point Field Goal %', 'FG3%'], ['Free Throw %', 'FT%'], ['Effective Field Goal %', 'eFG%']]
+const statsHeadArr = [['Year','Yr'], ['Games','G'], ['Points per Game','PTS/G'], ['Rebounds per Game','RB/G'], ['Field Goal %', 'FG%'], ['3-Point Field Goal %', 'FG3%'], ['Free Throw %', 'FT%']]
 
 
 const Statistics = () => {
@@ -33,11 +31,9 @@ const Statistics = () => {
                             <td>{data.games}</td>
                             <td>{data.points}</td>
                             <td>{data.rebounds}</td>
-                            <td>{data.assists}</td>
                             <td>{data.two_field_goal_percent}</td>
                             <td>{data.three_field_goal_percent}</td>
                             <td>{data.free_throw_percent}</td>
-                            <td>{data.effetive_field_goal_percent}</td>
                         </tr>
                     ))}
                 </tbody>
