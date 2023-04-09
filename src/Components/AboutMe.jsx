@@ -8,14 +8,23 @@ const AboutMe = () => {
             <div className='about-header'>
                 <h1>Jacob Doffing</h1>
             </div>
-            <div className='about-stats container text-center'>
-                <div className='about-stats-row  row row-cols-3'>
-                    <HeaderStat statNum="19.7" statType="points" />
-                    <HeaderStat statNum="8.7" statType="rebounds" />
-                    <HeaderStat statNum="4.7" statType="assists" />
-                    <HeaderStat statNum="2.2" statType="blocks" />
-                    <HeaderStat statNum="1.3" statType="steals" />
-                    <HeaderStat statNum="33.7" statType="minutes" />
+            <div className='about-stats container d-flex  justify-content-end'>
+                <div className='about-stats-row  row row-cols-1'>
+                    <div className="col">
+                    <HeaderStat statNum="30" statType="GP" />
+                    </div>
+                    <div className="col">
+
+                    <HeaderStat className="col" statNum="57.1" statType="FG %" />
+                    </div>
+                </div>
+                <div className='about-stats-row  row row-cols-1'>
+                    <div className="col">   
+                    <HeaderStat className="col" statNum="30.0" statType="3PT %" />
+                    </div>
+                    <div className="col">
+                    <HeaderStat className="col"  statNum="82.3" statType="FT %" />
+                    </div>
                 </div>
             </div>
             <div className='about-summary'>
